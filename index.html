@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="de-CH">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex">
-<style>[hidden]{display:none!important}img{max-width:100%}</style>
-</head>
-<body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>KI in der Vereinsarbeit</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -151,7 +143,7 @@ b,strong{color:var(--ink);font-weight:700}
 .tl .it.first::before{background:var(--amber)}
 
 /* tools */
-.tools{display:grid;grid-template-columns:repeat(5,1fr);margin-top:90px}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);margin-top:90px}
 .tool{padding:10px 30px 10px 28px;border-left:2px dashed rgba(255,181,71,.4);display:flex;flex-direction:column;gap:14px;min-width:0;transition:transform .4s var(--ease)}
 .tool:first-child{border-left:0;padding-left:0}
 .tool:hover{transform:translateY(-8px)}
@@ -179,7 +171,11 @@ b,strong{color:var(--ink);font-weight:700}
 .qrrow .cap{display:flex;flex-direction:column;gap:10px}
 
 /* prompt formula */
-.formula{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;margin-top:20px;position:relative}
+.formula{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:20px;position:relative}
+.ing.key{border-color:var(--c);background:linear-gradient(180deg,rgba(125,168,255,.16),var(--card) 70%)}
+.ing .keytag{position:absolute;top:26px;right:22px;font-size:17px;font-weight:700;background:var(--c);color:#15171D;padding:5px 14px;border-radius:999px}
+.takeaway{font-size:32px;font-weight:700;color:var(--ink);line-height:1.35;margin-top:14px}
+.takeaway small{display:block;font-size:24px;font-weight:500;color:var(--muted);margin-top:8px}
 .ing{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px 26px 32px;display:flex;flex-direction:column;gap:16px;min-width:0;position:relative;overflow:hidden}
 .ing::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--c)}
 .ing .n{font-family:var(--mono);font-size:18px;color:var(--c);font-weight:600}
@@ -428,13 +424,13 @@ ol.how li::before{content:counter(h);width:40px;height:40px;border-radius:50%;ba
 
 
 /* ---------- agenda ---------- */
-.ag{height:100%;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:0 100px;box-sizing:border-box}
+.ag{height:100%;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:0 70px 0 100px;box-sizing:border-box}
 .track{position:relative;display:grid;grid-template-columns:repeat(8,1fr);margin-top:64px}
 .track::before,.track::after{content:"";position:absolute;left:36px;right:calc(12.5% - 36px);top:34px;height:4px;border-radius:2px;background:var(--line)}
 .track::after{background:var(--teal);transform-origin:left;transform:scaleX(0)}
 .track::after{transform:scaleX(var(--p,0));transition:transform .7s var(--ease)}
 @keyframes trackGrow{to{transform:scaleX(1)}}
-.st{position:relative;z-index:1;display:flex;flex-direction:column;gap:14px;padding-right:26px;min-width:0}
+.st{position:relative;z-index:1;display:flex;flex-direction:column;gap:14px;padding-right:18px;min-width:0}
 
 .st .nd{position:relative;z-index:1;width:72px;height:72px;border-radius:50%;background:var(--teal);color:var(--on-accent);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:30px;box-shadow:0 0 0 6px var(--paper)}
 .st.on .nd{animation:ndPop .6s cubic-bezier(.3,1.6,.5,1) both}
@@ -442,7 +438,7 @@ ol.how li::before{content:counter(h);width:40px;height:40px;border-radius:50%;ba
 .st.pause .nd{background:var(--amber)}
 .st.pause .nd svg{width:34px;height:34px}
 .st h3{font-size:26px;line-height:1.05;hyphens:auto}
-.st p{font-size:22px;line-height:1.4;color:var(--ink-soft)}
+.st p{font-size:21px;line-height:1.4;color:var(--ink-soft);overflow-wrap:break-word}
 .st .tag{align-self:flex-start;font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;background:var(--mint);color:var(--forest);padding:5px 9px;border-radius:6px}
 
 
@@ -625,7 +621,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     </div>
     <span class="rule"></span>
     <p class="lead anim">Mehr Zeit für das, was im Verein wirklich zählt<span class="caret"></span></p>
-    <p class="meta anim">Beat Schuler · 9. November · Altdorf</p>
+    <p class="meta anim">Beat Schuler · 23. November 2026 · Altdorf</p>
   </div>
 </section>
 
@@ -654,13 +650,13 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     <h2 class="words">Agenda</h2>
     <p class="lead anim">Das erwartet euch heute Abend</p>
     <div class="track">
-      <div class="st" style="--i:0" data-step="1"><span class="nd">1</span><h3>Was ist KI?</h3><p>So funktioniert sie, die wichtigsten Werkzeuge</p></div>
+      <div class="st" style="--i:0" data-step="1"><span class="nd">1</span><h3>Was ist KI?</h3><p>So funktioniert sie, die wichtigsten Werk&shy;zeuge</p></div>
       <div class="st" style="--i:1" data-step="2"><span class="nd">2</span><h3>Texte schreiben</h3><p>Die Prompt-Formel</p></div>
-      <div class="st" style="--i:2" data-step="3"><span class="nd">3</span><h3>Zeitfresser</h3><p>Protokolle und Social Media</p></div>
+      <div class="st" style="--i:2" data-step="3"><span class="nd">3</span><h3>Zeitfresser</h3><p>Protokolle und Kommuni&shy;kation</p></div>
       <div class="st pause" style="--i:3" data-step="4"><span class="nd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3v3M12 3v3"/></svg></span><h3>Pause</h3><p>20 Minuten</p></div>
-      <div class="st" style="--i:4" data-step="5"><span class="nd">4</span><h3>Sponsoring</h3><p>Fördergesuch mit der KI</p><span class="tag">Gruppenarbeit</span></div>
+      <div class="st" style="--i:4" data-step="5"><span class="nd">4</span><h3>Sponsoring</h3><p>Sponsoring&shy;gesuch mit der KI</p><span class="tag">Gruppenarbeit</span></div>
       <div class="st" style="--i:5" data-step="6"><span class="nd">5</span><h3>Bilder</h3><p>Bilder und Folien live erstellt</p></div>
-      <div class="st" style="--i:6" data-step="7"><span class="nd">6</span><h3>Events planen</h3><p>Checklisten und Helfereinsätze</p><span class="tag">Gruppenarbeit</span></div>
+      <div class="st" style="--i:6" data-step="7"><span class="nd">6</span><h3>Events planen</h3><p>Checklisten und Helfer&shy;einsätze</p><span class="tag">Gruppenarbeit</span></div>
       <div class="st" style="--i:7" data-step="8"><span class="nd">7</span><h3>Abschluss</h3><p>Kritischer Blick und eure Ideen</p></div>
     </div>
   </div>
@@ -717,7 +713,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
       <h2 class="words">Wie funktioniert das?</h2>
       <span class="rule"></span>
       <ul class="bul">
-        <li data-step="1">KI berechnet Wort für Wort, was am wahrscheinlichsten folgt</li>
+        <li data-step="1">KI berechnet Wort für Wort, welche Wörter passen könnten, und wählt eines davon aus</li>
         <li data-step="2">Deshalb klingt alles flüssig und überzeugend</li>
         <li data-step="3"><strong>Überzeugend heisst aber nicht richtig</strong></li>
         <li data-step="4">Stark bei: Formulieren, Zusammenfassen, Strukturieren, Ideen liefern</li>
@@ -741,7 +737,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     <div class="nw-mid anim"><span class="q">Welches Wort kommt als Nächstes?</span><span class="cnt" id="nwCnt"></span></div>
     <div class="nw-bars anim" id="nwBars"></div>
     <div class="nw-foot anim" data-nonav>
-      <p class="nw-cap" id="nwCap">Für jedes mögliche nächste Wort berechnet die KI eine Wahrscheinlichkeit.</p>
+      <p class="nw-cap" id="nwCap">Für jedes mögliche Wort eine Wahrscheinlichkeit. Wahrscheinliche Wörter werden oft gewählt, aber nicht immer.</p>
       <div class="nw-btns"><button class="btn" id="nwPlay">Abspielen</button><button class="btn ghost" id="nwNew">Neue Antwort</button></div>
     </div>
   </div>
@@ -756,7 +752,6 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
       <div class="tool anim"><svg viewBox="0 0 48 48"><path d="M24 4c2 11 9 18 20 20-11 2-18 9-20 20-2-11-9-18-20-20 11-2 18-9 20-20z"/></svg><h3>Gemini</h3><p>von Google, Texte und Bilder</p></div>
       <div class="tool anim"><svg viewBox="0 0 48 48"><path d="M24 12c-5-4-12-4-18-2v28c6-2 13-2 18 2 5-4 12-4 18-2V10c-6-2-13-2-18 2z"/><path d="M24 12v28"/></svg><h3>Claude</h3><p>besonders stark bei Texten</p></div>
       <div class="tool anim"><svg viewBox="0 0 48 48"><rect x="24" y="5" width="18" height="14" rx="1"/><path d="M33 5v14"/><rect x="6" y="14" width="12" height="9" rx="1"/><path d="M4 30h40M9 30v12M39 30v12"/><circle cx="24" cy="26" r="4"/><path d="M18 42l6-12 6 12"/></svg><h3>Copilot</h3><p>von Microsoft, in Word und Outlook integriert</p></div>
-      <div class="tool anim"><svg viewBox="0 0 48 48"><rect x="6" y="20" width="36" height="16" rx="5"/><circle cx="24" cy="28" r="6"/><circle cx="12" cy="28" r="1.5"/><path d="M24 6v6M14 9l3 5M34 9l-3 5M12 36v4M36 36v4"/></svg><h3>Gamma</h3><p>erstellt Präsentationen aus Text</p></div>
     </div>
   </div>
   <div class="foot anim"><span class="rule"></span><p class="small">Alle bieten eine Gratisversion an.</p></div>
@@ -887,14 +882,14 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
 <section class="slide" data-title="Die Prompt-Formel">
   <div class="copy" style="height:100%;padding:0 110px">
     <h2 class="words">Die Prompt-Formel</h2>
-    <p class="lead anim">Ein guter Auftrag an die KI hat fünf Zutaten:</p>
+    <p class="lead anim">Ein guter Auftrag an die KI hat vier Zutaten:</p>
     <div class="formula">
-      <div class="ing" data-step="1" style="--c:var(--c-rolle)"><span class="n">01</span><h3>Rolle</h3><p>Rolle – Wer soll schreiben?</p><span class="plus">+</span></div>
-      <div class="ing" data-step="2" style="--c:var(--c-aufgabe)"><span class="n">02</span><h3>Aufgabe</h3><p>Aufgabe – Was soll entstehen?</p><span class="plus">+</span></div>
-      <div class="ing" data-step="3" style="--c:var(--c-kontext)"><span class="n">03</span><h3>Kontext</h3><p>Kontext – Welche Infos braucht es?</p><span class="plus">+</span></div>
-      <div class="ing" data-step="4" style="--c:var(--c-ton)"><span class="n">04</span><h3>Ton</h3><p>Ton – Formell, herzlich, locker?</p><span class="plus">+</span></div>
-      <div class="ing" data-step="5" style="--c:var(--c-format)"><span class="n">05</span><h3>Format</h3><p>Format – Wie lang, welche Form?</p></div>
+      <div class="ing" data-step="1" style="--c:var(--c-aufgabe)"><span class="n">01</span><h3>Aufgabe</h3><p>Was soll entstehen?</p><span class="plus">+</span></div>
+      <div class="ing key" data-step="2" style="--c:var(--c-kontext)"><span class="n">02</span><span class="keytag">Das Wichtigste</span><h3>Kontext</h3><p>Wer seid ihr, für wen ist es, welche Fakten gehören hinein?</p><span class="plus">+</span></div>
+      <div class="ing" data-step="3" style="--c:var(--c-ton)"><span class="n">03</span><h3>Ton</h3><p>Formell, herzlich, locker?</p><span class="plus">+</span></div>
+      <div class="ing" data-step="4" style="--c:var(--c-format)"><span class="n">04</span><h3>Format</h3><p>Wie lang, welche Form?</p></div>
     </div>
+    <p class="takeaway" data-step="5">Je mehr ihr der KI über euren Verein erzählt, desto besser das Resultat.<small>Eine Rolle wie «Du bist im Vorstand» braucht es heute kaum mehr.</small></p>
   </div>
 </section>
 
@@ -905,13 +900,12 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     <div class="chat anim">
       <div class="bar"><i></i><i></i><i></i><span>Neuer Chat</span></div>
       <div class="body">
-        <p class="pl" data-step="1" data-type style="--c:var(--c-rolle)"><span class="k">Rolle:</span><span class="tx">Du bist im Vorstand des FC Spiringhausen.</span></p>
-        <p class="pl" data-step="2" data-type style="--c:var(--c-aufgabe)"><span class="k">Aufgabe:</span><span class="tx">Schreibe eine Einladung zu unserem Frühlingsfest.</span></p>
-        <p class="pl" data-step="3" data-type style="--c:var(--c-kontext)"><span class="k">Kontext:</span><span class="tx">Samstag, 27. März 2027, Festzelt beim Sportplatz Moosmatt, Festwirtschaft ab 11 Uhr, Kinderprogramm mit Torwandschiessen am Nachmittag, ab 20 Uhr Party mit Live-Band.</span></p>
-        <p class="pl" data-step="4" data-type style="--c:var(--c-ton)"><span class="k">Ton:</span><span class="tx">Herzlich und einladend.</span></p>
-        <p class="pl" data-step="5" data-type style="--c:var(--c-format)"><span class="k">Format:</span><span class="tx">Maximal 120 Wörter, für den Versand an Mitglieder, Eltern und Gönner.</span></p>
+        <p class="pl" data-step="1" data-type style="--c:var(--c-aufgabe)"><span class="k">Aufgabe:</span><span class="tx">Schreibe eine Einladung zu unserem Frühlingsfest.</span></p>
+        <p class="pl" data-step="2" data-type style="--c:var(--c-kontext)"><span class="k">Kontext:</span><span class="tx">Wir sind der FC Spiringhausen, ein Fussballverein mit vielen Junioren. Samstag, 27. März 2027, Festzelt beim Sportplatz Moosmatt, Festwirtschaft ab 11 Uhr, Kinderprogramm mit Torwandschiessen am Nachmittag, ab 20 Uhr Party mit Live-Band.</span></p>
+        <p class="pl" data-step="3" data-type style="--c:var(--c-ton)"><span class="k">Ton:</span><span class="tx">Herzlich und einladend.</span></p>
+        <p class="pl" data-step="4" data-type style="--c:var(--c-format)"><span class="k">Format:</span><span class="tx">Maximal 120 Wörter, für den Versand an Mitglieder, Eltern und Gönner.</span></p>
       </div>
-      <div class="send" data-step="5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Senden</div>
+      <div class="send" data-step="4"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Senden</div>
     </div>
   </div>
 </section>
@@ -950,7 +944,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
       </div>
       <div class="card" data-step="2">
         <p><b>Guter Auftrag:</b></p>
-        <div class="chips"><span class="chip" style="--c:var(--c-rolle)">Rolle</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-aufgabe)">Aufgabe</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-kontext)">Kontext</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-ton)">Ton</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-format)">Format</span></div>
+        <div class="chips"><span class="chip" style="--c:var(--c-aufgabe)">Aufgabe</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-kontext)">Kontext</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-ton)">Ton</span><span class="pl2">+</span><span class="chip" style="--c:var(--c-format)">Format</span></div>
         <p class="res">→ Fertiger Text, der zu eurem Verein passt</p>
       </div>
     </div>
@@ -965,7 +959,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     <div class="panel">
       <h1 class="words" style="font-size:100px">Die grossen Zeitfresser</h1>
       <span class="rule"></span>
-      <p class="kicker anim">Protokolle · Social Media · Sponsoring und Fördergesuche</p>
+      <p class="kicker anim">Protokolle · Kommunikation · Sponsoringgesuche</p>
     </div>
   </div>
 </section>
@@ -1020,16 +1014,16 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
 </section>
 
 <!-- 20 Social Media -->
-<section class="slide" data-title="Social Media mit KI">
+<section class="slide" data-title="Kommunikation mit KI">
   <div class="split right">
     <div class="copy">
-      <h2 class="words">Social Media mit KI</h2>
+      <h2 class="words">Kommunikation mit KI</h2>
       <span class="rule"></span>
       <ul class="bul">
-        <li class="anim">Mehrere Varianten auf Knopfdruck</li>
+        <li class="anim">Medienmitteilung für die Lokalzeitung</li>
+        <li class="anim">Posts für Social Media, in mehreren Varianten</li>
         <li class="anim">Countdown-Posts: «Noch <span class="count" data-to="7" data-from="10" data-down="1">7</span> Tage bis zum Frühlingsfest!»</li>
-        <li class="anim">Passende Emojis und Hashtags</li>
-        <li class="anim">Kurz, persönlich, mit Bild</li>
+        <li class="anim">Ein Text, viele Kanäle: Zeitung, Website, Newsletter, Post</li>
       </ul>
       <div class="tip anim"><span class="badge">Tipp</span><p>Die KI schreibt den Entwurf, ihr gebt den Feinschliff.</p></div>
     </div>
@@ -1050,14 +1044,14 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
 </section>
 
 <!-- 21 Sponsoring -->
-<section class="slide" data-title="Sponsoring und Fördergesuche">
+<section class="slide" data-title="Sponsoringgesuche">
   <div class="copy" style="height:100%;padding:0 110px;gap:24px">
-    <h2 class="words">Sponsoring und Fördergesuche</h2>
-    <p class="lead anim">Ein gutes Fördergesuch enthält:</p>
+    <h2 class="words">Sponsoringgesuche</h2>
+    <p class="lead anim">Ein gutes Sponsoringgesuch enthält:</p>
     <div class="doc">
       <div class="sec" data-step="1"><span class="n">01</span><h3>Ausgangslage</h3><p>Ausgangslage – Wer sind wir?</p></div>
       <div class="sec" data-step="2"><span class="n">02</span><h3>Projekt</h3><p>Projekt – Was wollen wir erreichen?</p></div>
-      <div class="sec" data-step="3"><span class="n">03</span><h3>Nutzen</h3><p>Nutzen – Wem hilft es?</p></div>
+      <div class="sec" data-step="3"><span class="n">03</span><h3>Nutzen</h3><p>Nutzen – Was hat der Sponsor davon?</p></div>
       <div class="sec" data-step="4"><span class="n">04</span><h3>Budget</h3><p>Budget und Finanzierung</p></div>
       <div class="sec" data-step="5"><span class="n">05</span><h3>Kontakt</h3><p>Dank und Kontakt</p></div>
     </div>
@@ -1065,12 +1059,12 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
   </div>
 </section>
 
-<!-- GA1 Fördergesuch: Auftrag -->
-<section class="slide" data-title="Gruppenarbeit: Fördergesuch">
+<!-- GA1 Sponsoringgesuch: Auftrag -->
+<section class="slide" data-title="Gruppenarbeit: Sponsoringgesuch">
   <div class="gw">
     <div class="copy">
       <span class="eyebrow anim"><i></i>Gruppenarbeit</span>
-      <h2 class="words">Der Saal schreibt ein Fördergesuch</h2>
+      <h2 class="words">Der Saal schreibt ein Sponsoringgesuch</h2>
       <label class="proj anim" data-nonav>Unser Projekt<input id="gProj" type="text" value="Neue Trikots für alle Juniorenteams"></label>
       <ol class="how">
         <li class="anim">Jeder Block im Saal bekommt einen Baustein des Gesuchs.</li>
@@ -1096,26 +1090,26 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
   </div>
 </section>
 
-<!-- GA2 Fördergesuch: live -->
-<section class="slide" data-title="Fördergesuch: live mit KI">
-  <div class="copy" style="height:100%;padding:56px 90px 64px;justify-content:flex-start;gap:24px">
-    <h2 class="words" style="font-size:52px">Eure Stichworte, unser Fördergesuch</h2>
+<!-- GA2 Sponsoringgesuch: live -->
+<section class="slide" data-title="Sponsoringgesuch: live mit KI">
+  <div class="copy" style="height:100%;box-sizing:border-box;padding:56px 90px 64px;justify-content:flex-start;gap:24px">
+    <h2 class="words" style="font-size:52px">Eure Stichworte, unser Sponsoringgesuch</h2>
     <div class="live" style="grid-template-columns:620px 1fr;flex:1" data-nonav>
       <div class="fields">
         <label class="fld anim" style="--c:var(--c-rolle)"><span><small>01</small>Ausgangslage</span><textarea id="g1" placeholder="z. B. gegründet 1958, rund 280 Mitglieder, viele Kinder und Junioren"></textarea></label>
         <label class="fld anim" style="--c:var(--c-aufgabe)"><span><small>02</small>Projekt</span><textarea id="g2" placeholder="z. B. Trikots mit Vereinslogo für alle Teams, ab Frühling"></textarea></label>
-        <label class="fld anim" style="--c:var(--c-kontext)"><span><small>03</small>Nutzen</span><textarea id="g3" placeholder="z. B. Kinder spielen mit Stolz, Verein im Dorf sichtbar"></textarea></label>
+        <label class="fld anim" style="--c:var(--c-kontext)"><span><small>03</small>Nutzen</span><textarea id="g3" placeholder="z. B. Kinder spielen mit Stolz, Logo des Sponsors auf allen Trikots"></textarea></label>
         <label class="fld anim" style="--c:var(--c-ton)"><span><small>04</small>Budget</span><textarea id="g4" placeholder="z. B. Kosten rund Fr. 8000, Eigenleistung Fr. 3000"></textarea></label>
         <label class="fld anim" style="--c:var(--c-format)"><span><small>05</small>Kontakt</span><textarea id="g5" placeholder="z. B. Irene Bissig, Präsidentin"></textarea></label>
         <div class="actions anim">
-          <button class="btn big" id="gGo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.6L12 15l-1.8-4.4L5.5 9l4.7-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>Fördergesuch schreiben</button>
+          <button class="btn big" id="gGo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.6L12 15l-1.8-4.4L5.5 9l4.7-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>Sponsoringgesuch schreiben</button>
           <button class="btn ghost" id="gCopy">Prompt kopieren</button>
           <span class="status" id="gStatus"></span>
         </div>
       </div>
       <div class="paper anim" id="gPaper">
-        <div class="paper-h"><span>ENTWURF · FÖRDERGESUCH</span><span class="dot"></span></div>
-        <div class="paper-b empty" id="gOut">Hier entsteht das Fördergesuch,<br>sobald die Stichworte gesammelt sind.</div>
+        <div class="paper-h"><span>ENTWURF · SPONSORINGGESUCH</span><span class="dot"></span></div>
+        <div class="paper-b empty" id="gOut">Hier entsteht das Sponsoringgesuch,<br>sobald die Stichworte gesammelt sind.</div>
       </div>
     </div>
   </div>
@@ -1151,9 +1145,9 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
         <h3><span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg></span>Hier ist Vorsicht nötig:</h3>
         <ul class="bul">
           <li>Schrift im Bild ist oft fehlerhaft</li>
-          <li>Keine Logos oder Marken nachbilden</li>
           <li>Keine echten Personen darstellen</li>
-          <li>Urheberrecht beachten</li>
+          <li>Typischer KI-Look wirkt schnell austauschbar</li>
+          <li>Verschiedene Stile ausprobieren, nicht einfach das erste Bild nehmen</li>
         </ul>
       </div>
     </div>
@@ -1212,7 +1206,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
 
 <!-- GB2 Saal gegen KI -->
 <section class="slide" data-title="Saal gegen KI">
-  <div class="copy" style="height:100%;padding:56px 90px 64px;justify-content:flex-start;gap:22px">
+  <div class="copy" style="height:100%;box-sizing:border-box;padding:56px 90px 64px;justify-content:flex-start;gap:22px">
     <h2 class="words" style="font-size:52px">Saal gegen KI</h2>
     <div class="vs" data-nonav>
       <div class="team saal anim">
@@ -1225,7 +1219,7 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
         <div class="team-h"><h3>Die KI</h3><div class="score">nur bei der KI <b id="sKi">0</b></div></div>
         <div class="actions" style="margin:0"><button class="btn big" id="kGo" style="background:var(--sky)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.6L12 15l-1.8-4.4L5.5 9l4.7-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>KI fragen</button><span class="status" id="kStatus"></span></div>
         <ul class="items" id="kiList"></ul>
-        <p class="legend">Antippen streicht einen Punkt durch, den der Saal auch hatte.</p>
+        <p class="legend">Antippen streicht einen Punkt durch, den der Saal auch hatte. Es zählt die Idee, nicht das genaue Wort.</p>
       </div>
     </div>
   </div>
@@ -1574,15 +1568,15 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     const P=NWP[nwPath]; const L=P.words.length;
     nwCnt.textContent=pos<L?('Wort '+(pos+1)+' von '+L):'Fertig';
     let rand=false; for(let i=0;i<Math.min(pos+1,L);i++){ if(P.words[i]!==P.d[i][0][0] && i===Math.min(pos,L-1)) rand=true }
-    if(pos>=L){ nwCap.className='nw-cap'; nwCap.textContent='Ein überzeugender Satz, ohne dass die KI «weiss», was sie schreibt. Mit «Neue Antwort» entsteht ein anderer.'; return }
-    nwCap.className='nw-cap'; nwCap.textContent='Für jedes mögliche nächste Wort berechnet die KI eine Wahrscheinlichkeit.';
+    if(pos>=L){ nwCap.className='nw-cap'; nwCap.textContent='Ein überzeugender Satz, ohne dass die KI «weiss», was sie schreibt. Weil Zufall mitspielt, wird jeder Text anders.'; return }
+    nwCap.className='nw-cap'; nwCap.textContent='Für jedes mögliche Wort eine Wahrscheinlichkeit. Wahrscheinliche Wörter werden oft gewählt, aber nicht immer.';
   }
   function nwRender(s, animate){
     clearTimeout(nwT); const P=NWP[nwPath], L=P.words.length;
     if(animate && s===nwShown+1 && s>0){
       const pos=s-1, ch=P.words[pos];
       nwDist(pos, ch);
-      if(ch!==P.d[pos][0][0]){ nwCap.className='nw-cap rand'; nwCap.textContent='Nicht immer das wahrscheinlichste Wort. Darum klingt jede Antwort etwas anders.' }
+      if(ch!==P.d[pos][0][0]){ nwCap.className='nw-cap rand'; nwCap.textContent='Zufall: diesmal nicht das wahrscheinlichste Wort. Ab hier nimmt der Text einen anderen Weg.' }
       nwShown=s;
       nwT=setTimeout(()=>{ nwSentence(s, s-1); if(s<L){ nwDist(s); nwCaption(s) } else { nwCaption(L) } }, reduce?0:750);
       return;
@@ -1648,13 +1642,13 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
     catch(e){ statusEl.textContent='Kopieren nicht möglich. Text im Entwurf markieren und kopieren.' }
   }
 
-  /* ---- Fördergesuch ---- */
+  /* ---- Sponsoringgesuch ---- */
   const gIds=['g1','g2','g3','g4','g5'];
-  const gLabels=['Ausgangslage (Wer sind wir?)','Projekt (Was wollen wir erreichen?)','Nutzen (Wem hilft es?)','Budget und Finanzierung','Dank und Kontakt'];
+  const gLabels=['Ausgangslage (Wer sind wir?)','Projekt (Was wollen wir erreichen?)','Nutzen (Was hat der Sponsor davon?)','Budget und Finanzierung','Dank und Kontakt'];
   function gVal(id){const el=document.getElementById(id); return (el.value.trim()|| el.placeholder.replace(/^z\. B\.\s*/,'')).trim()}
   function gPrompt(){
     const proj=(document.getElementById('gProj').value||'').trim();
-    return 'Du bist im Vorstand des FC Spiringhausen, eines Fussballvereins in der Schweiz. Schreibe ein Fördergesuch an eine regionale Stiftung.\n'+
+    return 'Du bist im Vorstand des FC Spiringhausen, eines Fussballvereins in der Schweiz. Schreibe ein Sponsoringgesuch an ein regionales Unternehmen.\n'+
       'Projekt: '+proj+'\n\nVerwende ausschliesslich diese Stichworte aus der Versammlung:\n'+
       gIds.map((id,i)=>'- '+gLabels[i]+': '+gVal(id)).join('\n')+
       '\n\nRegeln: Erfinde keine Zahlen, Namen oder Fakten. Wo eine Angabe fehlt, setze einen Platzhalter in eckigen Klammern. Schweizer Rechtschreibung (ss statt ß), Beträge als «Fr.». Herzlicher, aber seriöser Ton. Höchstens 200 Wörter. Aufbau: Betreffzeile, Anrede, je ein kurzer Absatz pro Baustein, Grussformel. Gib nur den Brief aus, ohne Vorbemerkung und ohne Markdown-Überschriften.';
@@ -1790,5 +1784,4 @@ table.pend.on tbody tr:nth-child(2){animation-delay:.12s}table.pend.on tbody tr:
 })();
 </script>
 
-</body>
-</html>
+</body></html>
